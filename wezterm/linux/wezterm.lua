@@ -9,7 +9,6 @@ return {
 
   -- Colors
   color_scheme = 'Hacktober',
-&
   -- Window
   window_background_opacity = 0.95,
   window_padding = {
