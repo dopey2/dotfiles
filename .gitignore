@@ -1,7 +1,8 @@
 # Secrets — never tracked
 .env
 *.secret
-tokens.zsh
+secrets/*
+!secrets/*.template
 
 #IDE
 .idea
