@@ -1,0 +1,10 @@
+# Secrets — never tracked
+.env
+*.secret
+tokens.zsh
+
+#IDE
+.idea
+
+# OS
+.DS_Store

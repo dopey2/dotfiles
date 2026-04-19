@@ -1,0 +1,2 @@
+"qdbus6 org.kde.krunner /App org.kde.krunner.App.display"
+  Mod4 + space
