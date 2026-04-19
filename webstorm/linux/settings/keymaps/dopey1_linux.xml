@@ -1,0 +1,21 @@
+<keymap version="1" name="dopey1_linux" parent="Default for KDE">
+  <action id="ActivateCommitToolWindow">
+    <keyboard-shortcut first-keystroke="alt #10000e0" />
+  </action>
+  <action id="ActivateProjectToolWindow">
+    <keyboard-shortcut first-keystroke="alt ampersand" />
+  </action>
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl w" />
+  </action>
+  <action id="EditorSelectWord" />
+  <action id="GotoFile" />
+  <action id="NewElementMenu">
+    <keyboard-shortcut first-keystroke="shift ctrl n" />
+  </action>
+  <action id="SmartSelect" />
+  <action id="TableResult.GrowSelection" />
+  <action id="TableResult.SelectColumn" />
+  <action id="Terminal.DeletePreviousWord" />
+  <action id="UsageFiltering.WriteAccess" />
+</keymap>
