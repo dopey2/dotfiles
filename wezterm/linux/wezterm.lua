@@ -9,6 +9,10 @@ return {
 
   -- Colors
   color_scheme = 'Hacktober',
+  colors = {
+    selection_fg = '#1a1a1a',
+    selection_bg = '#b0854b',
+  },
 
   -- Window
   window_background_opacity = 0.95,
