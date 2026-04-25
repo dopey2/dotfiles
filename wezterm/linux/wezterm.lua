@@ -54,7 +54,7 @@ return {
 
     -- -----------------------------------------------------------------------
     -- kbprompt-zsh — escape sequences forwarded to zsh
-    -- See kbprompt/profiles/linux-wezterm.md for the full picture.
+    -- See kbprompt/profiles/linux.md for the full picture.
     -- -----------------------------------------------------------------------
 
     -- Ctrl+Left/Right: WezTerm reserves these — send explicit sequences so

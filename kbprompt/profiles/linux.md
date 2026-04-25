@@ -1,4 +1,4 @@
-# Profile — Linux + WezTerm
+# Profile — Linux
 
 ---
 

@@ -50,7 +50,7 @@ return {
 
     -- -----------------------------------------------------------------------
     -- kbprompt-zsh — escape sequences forwarded to zsh
-    -- See kbprompt/profiles/macos-wezterm.zsh for the full picture.
+    -- See kbprompt/profiles/macos.zsh for the full picture.
     -- -----------------------------------------------------------------------
 
     -- Ctrl+Shift+Left/Right: WezTerm reserves these — override to forward to

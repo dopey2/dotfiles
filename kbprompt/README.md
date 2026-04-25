@@ -1,6 +1,7 @@
 # kbprompt-zsh
 
-IDE-like text selection for the zsh prompt. Adds Shift+Arrow selection, word selection, select-all, and clipboard sync — the editing behavior you expect from a code editor, inside your terminal.
+IDE-like text selection for the zsh prompt. Adds Shift+Arrow selection, word selection, select-all, and clipboard sync —
+the editing behavior you expect from a code editor, inside your terminal.
 
 ---
 
@@ -8,10 +9,12 @@ IDE-like text selection for the zsh prompt. Adds Shift+Arrow selection, word sel
 
 Two layers:
 
-1. **Terminal** — intercepts key combos and translates them into escape sequences sent to the shell. Configured per terminal in `profiles/`.
+1. **Terminal** — intercepts key combos and translates them into escape sequences sent to the shell. Configured per
+   terminal in `profiles/`.
 2. **kbprompt.zsh** — binds those sequences to ZLE widgets that perform selection, cursor movement, and clipboard sync.
 
-All platform-specific values (clipboard command, escape sequences) live in a **profile file**. The core script is terminal-agnostic.
+All platform-specific values (clipboard command, escape sequences) live in a **profile file**. The core script is
+terminal-agnostic.
 
 ---
 
@@ -20,7 +23,7 @@ All platform-specific values (clipboard command, escape sequences) live in a **p
 Source a profile then the core script in `.zshrc`, after oh-my-zsh if used:
 
 ```sh
-source ~/repos/dotfiles/kbprompt/profiles/linux-wezterm.zsh
+source ~/repos/dotfiles/kbprompt/profiles/linux.zsh
 source ~/repos/dotfiles/kbprompt/kbprompt.zsh
 ```
 
@@ -28,12 +31,13 @@ source ~/repos/dotfiles/kbprompt/kbprompt.zsh
 
 ## Profiles
 
-| Profile                      | Platform        | Notes                          |
-|------------------------------|-----------------|--------------------------------|
-| `profiles/linux-wezterm.zsh` | Linux + WezTerm | See `profiles/linux-wezterm.md` |
-| `profiles/macos-iterm2.zsh`  | macOS + iTerm2  | See `profiles/macos-iterm2.md`  |
+| Profile              | Platform                  | Notes                   |
+|----------------------|---------------------------|-------------------------|
+| `profiles/linux.zsh` | Linux + WezTerm           | See `profiles/linux.md` |
+| `profiles/macos.zsh` | macOS + WezTerm or iTerm2 | See `profiles/macos.md` |
 
 Each profile defines:
+
 - `_kbprompt_clipboard_write()` — writes its first argument to the system clipboard
 - `KBPROMPT_SEQ_*` — escape sequences for each binding (empty = binding skipped)
 
