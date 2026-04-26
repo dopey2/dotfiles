@@ -23,6 +23,9 @@ alias glog='git log --oneline --graph --decorate --all'
 #: gundo - git reset --soft HEAD~1
 alias gundo='git reset --soft HEAD~1'
 
+#: gpush - git push -u origin currentBranchName
+alias gpush='git push --set-upstream origin $(git branch --show-current)'
+
 # requires fzf --> https://github.com/junegunn/fzf
 #: gri - "git rebase -i" with fuzy finder for commit history.
 alias gri='hash=$(git log --oneline | fzf | awk '{ print $1 }') && git rebase -i $hash'
