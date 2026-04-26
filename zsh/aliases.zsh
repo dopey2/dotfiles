@@ -33,8 +33,15 @@ alias gpush='git push --set-upstream origin $(git branch --show-current)'
 alias gap='git add -p'
 
 # requires fzf --> https://github.com/junegunn/fzf
-#: gri - "git rebase -i" with fuzy finder for commit history.
+#: gri - git rebase interactive with fuzy finder.
 gri() {
   local hash=$(git log --oneline | fzf | awk '{ print $1 }')
   [[ -n $hash ]] && git rebase -i $hash
+}
+
+# requires fzf --> https://github.com/junegunn/fzf
+#: gbi - git switch branch interactive with fuzy finder
+gbi() {
+  local branch=$(git branch --list | fzf | sed 's/^[* ]*//')
+  [[ -n $branch ]] && git checkout $branch
 }
