@@ -23,6 +23,9 @@ alias glog='git log --oneline --graph --decorate --all'
 #: gundo - git reset --soft HEAD~1
 alias gundo='git reset --soft HEAD~1'
 
+#: gamend - git commit --amend --no-edit (instantly add staged files)
+alias gamend='git commit --amend --no-edit'
+
 #: gpush - git push -u origin currentBranchName
 alias gpush='git push --set-upstream origin $(git branch --show-current)'
 
