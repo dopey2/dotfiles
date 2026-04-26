@@ -31,4 +31,7 @@ alias gap='git add -p'
 
 # requires fzf --> https://github.com/junegunn/fzf
 #: gri - "git rebase -i" with fuzy finder for commit history.
-alias gri='hash=$(git log --oneline | fzf | awk '{ print $1 }') && git rebase -i $hash'
+gri() {
+  local hash=$(git log --oneline | fzf | awk '{ print $1 }')
+  [[ -n $hash ]] && git rebase -i $hash
+}
