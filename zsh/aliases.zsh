@@ -13,3 +13,9 @@ alias la='eza -la'
 
 #: resource - reload the zsrch
 alias resource='source ~/.zshrc && echo "zshrc reloaded !"'
+
+## git aliases
+
+# requires fzf --> https://github.com/junegunn/fzf
+#: gri - like "git rebase -i" with fuzy finder for commit history.
+alias gri='hash=$(git log --oneline | fzf | awk '{ print $1 }') && git rebase -i $hash'
