@@ -1,14 +1,13 @@
 ## Preferred Keybindings
 
-Those should match both linux & windows bindings.
-
 ### Navigation
 
-| Key      | Action                   |
-|----------|--------------------------|
-| ALT + 1  | Navigate to project tree |
-| ALT + 0  | Navigate to git commits  |
-| CTRL + E | Show recent files        |
+| Key             | Action                  |
+|-----------------|-------------------------|
+| ALT + 1         | Navigate to project tree |
+| ALT + 0         | Navigate to git commits |
+| CTRL + E        | Show recent files       |
+| ALT + SHIFT + 1 | Select opened file      |
 
 ### Search & Replace
 
@@ -20,15 +19,18 @@ Those should match both linux & windows bindings.
 
 ### Editor
 
-| Key                      | Action                |
-|--------------------------|-----------------------|
-| HOME/END                 | Beginning/End of line |
-| Page UP/DOWN             | Scroll up/down        |
-| CTRL + G                 | Go to line            |
-| ALT + UP/DOWN            | Previous/Next  Method |
-| ALT + SHIFT + MOUSE DRAG | Multi caret select    |
-| CTRL + ALT + SHIFT + L   | Reformat whole file   |
-| ALT + ENTER              | Quick Fix             |
+| Key                      | Action                   |
+|--------------------------|--------------------------|
+| HOME/END                 | Beginning/End of line    |
+| Page UP/DOWN             | Scroll up/down           |
+| CTRL + G                 | Go to line               |
+| CTRL + D                 | Duplicate line           |
+| ALT + UP/DOWN            | Previous/Next  Method    |
+| CTRL + B                 | Jump to definition/usage |
+| ALT + SHIFT + MOUSE DRAG | Multi caret select       |
+| CTRL + ALT + SHIFT + L   | Reformat whole file      |
+| ALT + ENTER              | Quick Fix                |
+| SHIFT + F6               | Refactor selected symbol |
 
 ### Tabs
 
